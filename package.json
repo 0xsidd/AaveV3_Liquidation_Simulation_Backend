@@ -1,0 +1,28 @@
+{
+  "name": "aave-liquidation-simulaiton",
+  "scripts": {
+    "build": "tsc --skipLibCheck",
+    "start": "tsc --skipLibCheck && node ./build/config/server/index.js",
+    "ts:watch": "tsc -w",
+    "test": "NODE_ENV=test mocha -r ts-node/register test/index.js --exit"
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "dotenv": "14.1.0",
+    "ethers": "^5.7.0",
+    "express": "4.17.2",
+    "mongoose": "6.1.6",
+    "node-cron": "^3.0.2",
+    "ts-node": "10.4.0"
+  },
+  "devDependencies": {
+    "@types/debug": "4.1.7",
+    "@types/dotenv": "8.2.0",
+    "@types/express": "4.17.13",
+    "@types/mongoose": "5.11.97",
+    "@types/node": "17.0.9",
+    "@types/node-cron": "^3.0.8"
+  }
+}
