@@ -25,7 +25,7 @@ app.set('port', process.env.PORT || 3000);
  */
 app.set('secret', process.env.SECRET || 'superSecret');
 CronService.borrowEventV3();
-// CronService.healthFactorCheck();
+CronService.healthFactorCheck();
 /**
  * @exports {express.Application}
  */
